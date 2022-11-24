@@ -16,6 +16,10 @@ repositories {
     mavenCentral()
 }
 
+run {
+  standardInput = System.in
+}
+
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
@@ -26,7 +30,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'dv700.a1.hashfunc.App'
+    mainClass = 'App'
 }
 
 tasks.named('test') {
